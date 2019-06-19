@@ -1,15 +1,18 @@
-//
-//  main.c
-//  MarioSI
-//
-//  Created by Артем on 6/19/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
-
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+
+int main() {
+    int arr[5][5] = {{0,0,0,0,0},
+                    {0,0,0,0,0},
+                    {0,0,0,0,0},
+                    {0,0,0,0,0},
+                    {0,0,0,0,0}};
+    
+    
+    for (int i = 0; i <= 4; i++) {
+        for (int j = 0; j <= i; j++) {
+        printf("%i ", arr[i][j]);
+        }
+        printf("\n");
+    }
 }
